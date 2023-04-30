@@ -23,7 +23,7 @@ export const StoryCard: FC<HNItemProps<HNStory>> = ({
 }) => (
   <Card key={id} sx={{ maxWidth: 370 }}>
     <CardActionArea>
-      <CardContent sx={{ height: 150 }}>
+      <CardContent sx={{ height: 170 }}>
         <Typography variant='body2' color='text.secondary'>{ normalizeHNTime(time) }</Typography>
         <Typography variant='h6'>{ title }</Typography>
         <Grid

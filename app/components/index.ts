@@ -1,3 +1,3 @@
 export { StoryCard } from './StoryCard';
-export { MainContainer } from './MainContainer';
+export { MainLayout } from './MainLayout';
 export { StoryComments } from './StoryComments';

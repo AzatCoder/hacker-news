@@ -10,6 +10,7 @@ import {
 import { unstable_useEnhancedEffect } from '@mui/material';
 import { withEmotionCache } from '@emotion/react';
 import { ClientStyleContext } from './ssr-tools';
+import { MainLayout } from './components';
 
 interface DocumentProps {
   children: React.ReactNode;
@@ -57,7 +58,9 @@ const Document = withEmotionCache(({ children, title }: DocumentProps, emotionCa
 export default function App() {
   return (
     <Document>
-      <Outlet />
+      <MainLayout>
+        <Outlet />
+      </MainLayout>
     </Document>
   );
 }

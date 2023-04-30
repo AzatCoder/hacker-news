@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Fade from '@mui/material/Fade';
 import { useNavigation, } from '@remix-run/react';
 
-export const MainContainer: FC<BoxProps> = ({ children, ...boxProps }) => {
+export const MainLayout: FC<BoxProps> = ({ children, ...boxProps }) => {
   const navigation = useNavigation();
   const isLoading = navigation.state === 'loading';
   

@@ -5,8 +5,9 @@ import type { LoaderArgs, V2_MetaFunction } from '@remix-run/node';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { useLoaderData, useRevalidator, Link as RemixLink } from '@remix-run/react';
 import { getHNStory } from '~/api';
-import { MainContainer, StoryComments } from '~/components';
+import { StoryComments } from '~/components';
 import { multiple, normalizeHNTime } from '~/helpers';
+import { Fragment } from 'react';
 
 export const loader = async({ params }: LoaderArgs) => {
   // @ts-ignore
@@ -23,7 +24,7 @@ export default function Blog () {
   const revalidator = useRevalidator();
 
   return (
-    <MainContainer>
+    <Fragment>
       <RemixLink style={{ textDecoration: 'none' }} to='/'>
         <Typography color='blue'>Back to news</Typography>
       </RemixLink>
@@ -45,6 +46,6 @@ export default function Blog () {
         </LoadingButton>
         <StoryComments storyComments={comments} />
       </Box>
-    </MainContainer>
+    </Fragment>
   );
 }

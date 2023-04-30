@@ -4,9 +4,9 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import type { V2_MetaFunction} from '@remix-run/node';
 import { Link, useLoaderData, useRevalidator } from '@remix-run/react';
-import { useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
 import { getHNNewestStories } from '~/api';
-import { MainContainer, StoryCard } from '~/components';
+import { StoryCard } from '~/components';
 
 export const meta: V2_MetaFunction = () => {
   return [{ title: 'Hacker News' }];
@@ -33,7 +33,7 @@ export default function Index() {
   }, []);
 
   return (
-    <MainContainer>
+    <Fragment>
       <Box display='flex' gap={1} marginBottom={2}>
         <Typography variant='h4'>100 Latest News</Typography>
         <LoadingButton
@@ -55,6 +55,6 @@ export default function Index() {
           </Grid>
         )) }
       </Grid>
-    </MainContainer>
+    </Fragment>
   );
 }
