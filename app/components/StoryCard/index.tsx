@@ -1,5 +1,9 @@
 import type { FC, ReactNode } from 'react';
-import { Card, CardActionArea, CardContent, Typography, Grid } from '@mui/material';
+import Card from '@mui/material/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import type { HNItemProps, HNStory } from '~/api/types';
 import { multiple, normalizeHNTime } from '~/helpers';
 

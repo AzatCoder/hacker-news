@@ -1,5 +1,7 @@
 import { LoadingButton } from '@mui/lab';
-import { Box, Grid, Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import type { V2_MetaFunction} from '@remix-run/node';
 import { Link, useLoaderData, useRevalidator } from '@remix-run/react';
 import { useEffect } from 'react';

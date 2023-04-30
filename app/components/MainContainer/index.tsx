@@ -1,7 +1,9 @@
 import type { FC} from 'react';
 import { Fragment } from 'react';
-import type { BoxProps } from '@mui/material';
-import { LinearProgress, Box, Fade } from '@mui/material';
+import type { BoxProps } from '@mui/material/Box';
+import LinearProgress from '@mui/material/LinearProgress';
+import Box from '@mui/material/Box';
+import Fade from '@mui/material/Fade';
 import { useNavigation, } from '@remix-run/react';
 
 export const MainContainer: FC<BoxProps> = ({ children, ...boxProps }) => {

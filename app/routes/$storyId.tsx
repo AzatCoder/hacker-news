@@ -1,6 +1,8 @@
-import { Typography, Box, Link } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
 import type { LoaderArgs, V2_MetaFunction } from '@remix-run/node';
-import { LoadingButton } from '@mui/lab';
+import LoadingButton from '@mui/lab/LoadingButton';
 import { useLoaderData, useRevalidator, Link as RemixLink } from '@remix-run/react';
 import { getHNStory } from '~/api';
 import { MainContainer, StoryComments } from '~/components';

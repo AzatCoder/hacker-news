@@ -1,7 +1,8 @@
 import type { FC} from 'react';
 import { Fragment, useState } from 'react';
-import { Box, Typography } from '@mui/material';
-import { LoadingButton } from '@mui/lab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import LoadingButton from '@mui/lab/LoadingButton';
 import { multiple, normalizeHNTime } from '~/helpers';
 import type { HNComment, HNItemProps } from '~/api/types';
 import { getHNComments } from '~/api';
